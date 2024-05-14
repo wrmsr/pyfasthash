@@ -101,7 +101,7 @@ elif IS_POSIX:
     else:
         libraries += ["rt", "gcc"]
 
-   extra_compile_args += [('-mcpu=apple-m1' if IS_ARM64 and IS_MACOS else '-march=native')]
+    extra_compile_args += [('-mcpu=apple-m1' if IS_ARM64 and IS_MACOS else '-march=native')]
 
 if SUPPORT_INT128:
     macros += [
