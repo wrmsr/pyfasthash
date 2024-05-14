@@ -148,7 +148,7 @@ c_libraries = [(
         ])),
         "macros": [
             ("T1HA0_AESNI_AVAILABLE", ON if cpu.aes else OFF),
-            ("T1HA0_RUNTIME_SELECT", ON),
+            ("T1HA0_RUNTIME_SELECT", ON if cpu.aes else OFF),
         ],
         "cflags": extra_compile_args,
     }
