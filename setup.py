@@ -101,7 +101,7 @@ elif IS_POSIX:
     else:
         libraries += ["rt", "gcc"]
 
-    extra_compile_args += ["-march=native"]
+    # extra_compile_args += ["-march=native"]
 
 if SUPPORT_INT128:
     macros += [
